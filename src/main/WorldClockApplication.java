@@ -24,7 +24,7 @@ public class WorldClockApplication {
 
 		// first we need to capture what the time is at this exact moment...
 		ZonedDateTime zonedDateTime = ZonedDateTime.now();
-		System.out.println(zonedDateTime);
+//		System.out.println(zonedDateTime);
 		
 //		zonedDateTime = zonedDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm a").ofLocalizedDateTime(FormatStyle.MEDIUM));
 		System.out.println("Toronto, Canada -> " + zonedDateTime.withZoneSameInstant(TORONTO).format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm a").ofLocalizedDateTime(FormatStyle.MEDIUM)));
